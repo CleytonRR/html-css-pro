@@ -48,10 +48,49 @@
     -webkit-transform: rotate(-45deg) translate3d(6px, -5px, 0);
 }
 
+
+/* Header logo */
+
+.header-logo {
+    max-width: 180px;
+    padding: 22px 0;
+    float: left;
+}
+
+/* Header menu */
+
+.header-nav {
+    float: left;
+    padding: 25px 0;
+}
+
+.header-nav ul li {
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.header-nav ul li a {
+    color: #2c3e50;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.header-nav ul li a:hover {
+    color: #f47933;
+}
+
+.header-nav ul li a.active {
+    color: #f47933;
+}
+
 /* Search */
 
 .header-search {
     position: relative;
+    float: right;
+    margin: 18px 0;
 }
 
 .header-search::placeholder {
@@ -95,7 +134,7 @@
 ----------------------------- */
  /* MAX-WIDTH */
 
- @media (max-width: 960px) {
+ @media (max-width: 959.9px) {
     #nav-toggle, .header-redes {
         display: block;
     }
@@ -109,7 +148,7 @@
     /* Heade logo */
     .header-logo {
         max-width: 180px;
-        width: 60%;
+        float: none;
         padding: 12px 0;
     }
 
@@ -131,6 +170,10 @@
         top: 0%
     }
 
+    .header-nav {
+        padding: 25px 0;
+    }
+
     .header-nav ul li {
         width: 100%;
         text-align: center;
@@ -140,17 +183,61 @@
 
     .header-nav ul li a {
         color: #fff;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 1.375rem;
+        font-size: 1.4rem;
     }
 
     .header-search {
         max-width: 300px;
         margin: 0 auto;
+        float: none;
     }
     
     .header-search input {
         padding: 15px;
     }
  }
+
+ @media (min-width: 960px) {
+     /* Header */
+     .header-nav {
+         margin-left: 2%;
+     }
+
+     .header-nav ul li a.active::before {
+        background-color: #f47933;
+        content: '';
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        top: -31px;
+        left: 0;
+    }
+ }
+
+ @media (min-width: 1024px) {
+     /* Header */
+    .header-nav ul li {
+        margin: 0 2px;
+    }
+}
+
+@media (min-width: 1144px) {
+    /* Header */
+    .header-logo {
+        width: auto;
+    }
+   .header-nav ul li a {
+       font-size: 1rem;
+   }
+}
+
+@media (min-width: 1280px) {
+    /* Header */
+   .header-nav ul li {
+       margin: 0 8px;
+   }
+
+   .header-search {
+       width: 260px;
+   }
+}
