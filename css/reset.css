@@ -30,6 +30,12 @@ img {
     border: 0;
 }
 
+input,
+button,
+textarea {
+    border: 0;
+}
+
 .font-zero {
     font-size: 0;
 }
