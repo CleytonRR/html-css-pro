@@ -73,13 +73,26 @@
     transform: translateY(-50%);
 }
 
+/* redes header */
+.header-redes {
+    text-align: center;
+    margin: 20px 0;
+    display: none;
+}
+
+.header-redes a {
+    color: #fff;
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
 
 /* BREAKPOINTS
 ----------------------------- */
  /* MAX-WIDTH */
 
  @media (max-width: 960px) {
-    #nav-toggle {
+    #nav-toggle, .header-redes {
         display: block;
     }
 
