@@ -54,6 +54,10 @@
     position: relative;
 }
 
+.header-search::placeholder {
+    color: #fff;
+}
+
 .header-search input {
     width: 100%;
     color: #fff;
@@ -96,8 +100,20 @@
         display: block;
     }
 
-    /* Menu */
+    /* header */
+    .header {
+        height: 58px;
+        background-color: #eee;
+    }
 
+    /* Heade logo */
+    .header-logo {
+        max-width: 180px;
+        width: 60%;
+        padding: 12px 0;
+    }
+
+    /* Menu */
     .header-collapse {
         position: fixed;
         background: rgba(45, 63, 81, .95);
@@ -105,10 +121,14 @@
         height: 100%;
         z-index: 10;
         padding: 15px;
-        top: 0;
+        top: -100%;
         left: 0;
         transition: top .4s ease;
         -webkit-transition: top .4s ease;
+    }
+
+    .header-collapse.active {
+        top: 0%
     }
 
     .header-nav ul li {
