@@ -154,6 +154,7 @@
 
     /* Menu */
     .header-collapse {
+        overflow-y: auto;
         position: fixed;
         background: rgba(45, 63, 81, .95);
         width: 100%;
