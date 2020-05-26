@@ -5,3 +5,11 @@ $(document).ready(function(){
         $('.header-collapse').toggleClass('active');
     })
 })
+
+// Carousel Principal
+$('.owl-carousel').owlCarousel({
+    items:1,
+    lazyLoad:true,
+    loop:true,
+    margin:10
+});
